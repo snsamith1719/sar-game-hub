@@ -20,7 +20,6 @@ const PlatformSelector = ({ onSelectedPlatform, selectedPlatform }: Props) => {
   const { data, error, isLoading } = usePlatforms();
 
   if (error) return null;
-  if (isLoading) return <Spinner />;
   return (
     <Menu>
       <MenuButton as={Button} rightIcon={<BsChevronDown />}>
